@@ -31,5 +31,17 @@ namespace No3.Solution.Tests
 
             Assert.AreEqual(expected, actual, 0.000001);
         }
+
+        [Test]
+        public void Test_AverageWithInterface()
+        {
+            Calculator calculator = new Calculator();
+
+            double expected = 8.3636363;
+
+            double actual = calculator.CalculateAverage(values, new AveragingMethodWithInterface());
+
+            Assert.AreEqual(expected, actual, 0.000001);
+        }
     }
 }

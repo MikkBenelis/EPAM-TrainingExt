@@ -40,6 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AveragingMethodWithInterface.cs" />
+    <Compile Include="IAveragingMethod.cs" />
     <Compile Include="AveragingMethod.cs" />
     <Compile Include="Calculator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

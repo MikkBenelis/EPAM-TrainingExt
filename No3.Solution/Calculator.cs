@@ -14,5 +14,15 @@ namespace No3.Solution
 
             return averagingFunc(values);
         }
+
+        public double CalculateAverage(List<double> values, IAveragingMethod averagingFunc)
+        {
+            if (values == null || averagingFunc == null)
+            {
+                throw new ArgumentNullException(nameof(values));
+            }
+
+            return averagingFunc.CalculateAverage(values);
+        }
     }
 }
